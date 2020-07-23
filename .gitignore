@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# DS_Store
+**/*.DS_Store*
+
+# dotenv environment variables file
+.env
+.env.test
+
+# VSCode
+.vscode
+
+# db
+guilds.sqlite
