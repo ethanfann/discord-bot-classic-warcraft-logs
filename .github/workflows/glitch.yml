@@ -22,7 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
       
-    - name: glitch-deploy
+    - name: glitch
       uses: wei/git-sync@v2
       with:
         source_repo: "https://github.com/ethanfann/discord-bot-classic-warcraft-logs"
