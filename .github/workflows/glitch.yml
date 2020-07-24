@@ -21,12 +21,11 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    - name: Git Sync Action
-      uses: wei/git-sync@v2.0.0
+      
+    - name: repo-sync
+      uses: wei/git-sync@v2
       with:
         source_repo: "https://github.com/ethanfann/discord-bot-classic-warcraft-logs"
         source_branch: "master"
         destination_repo: ${{ secrets.glitch_git_URL }}
         destination_branch: "master"
-
