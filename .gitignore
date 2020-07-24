@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules/
 
+# Dist
+dist
+
 # DS_Store
 **/*.DS_Store*
 

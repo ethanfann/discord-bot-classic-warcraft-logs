@@ -4,9 +4,11 @@
   "description": "Warcraft Logs Discord Bot",
   "main": "dist/bot.js",
   "scripts": {
-    "start": "npx nodemon",
+    "start": "tsc && node src/bot.js",
+    "develop": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "build": "tsc"
   },
   "author": "Ethan Fann",
   "license": "MIT",
