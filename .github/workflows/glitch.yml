@@ -27,5 +27,5 @@ jobs:
       with:
         source_repo: "https://github.com/ethanfann/discord-bot-classic-warcraft-logs"
         source_branch: "master"
-        destination_repo: ${{ secrets.glitch_git_URL }}
+        destination_repo: ${{ secrets.glitch }}
         destination_branch: "master"
