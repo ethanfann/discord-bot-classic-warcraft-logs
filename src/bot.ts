@@ -45,4 +45,4 @@ bot.on('message', msg => {
   })
 })
 
-process.env.ENV === 'dev' ? bot.login(process.env.TEST_TOKEN) : bot.login(process.env.TEST_TOKEN)
+process.env.ENV === 'dev' ? bot.login(process.env.TEST_TOKEN) : bot.login(process.env.TOKEN)
