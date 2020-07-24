@@ -4,7 +4,7 @@
   "description": "Warcraft Logs Discord Bot",
   "main": "dist/bot.js",
   "scripts": {
-    "start": "tsc && node src/bot.js",
+    "start": "tsc && node dist/bot.js",
     "develop": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
