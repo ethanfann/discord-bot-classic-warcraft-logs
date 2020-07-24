@@ -1,7 +1,8 @@
 import { GuildSettingsType } from '../types/types'
 import Keyv from 'keyv'
+require('dotenv').config()
 
-const keyv = new Keyv('sqlite://./guilds.sqlite')
+const keyv = new Keyv(process.env.DB_URI)
 keyv.on('error', error => console.log('Connection Error', error))
 
 export async function saveGuildSettings(

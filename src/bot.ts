@@ -1,7 +1,6 @@
 import Discord from 'discord.js'
 import { deleteGuildSettings, getGuildSettings } from './db/db'
-import Dotenv from 'dotenv'
-Dotenv.config()
+require('dotenv').config()
 
 // Discord
 const bot = new Discord.Client()
@@ -46,4 +45,4 @@ bot.on('message', msg => {
   })
 })
 
-bot.login(process.env.TOKEN)
+process.env.ENV === 'dev' ? bot.login(process.env.TEST_TOKEN) : bot.login(process.env.TEST_TOKEN)
