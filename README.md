@@ -1,4 +1,5 @@
 # Warcraft Classic Logs Bot
+![Node.js CI](https://github.com/ethanfann/discord-bot-classic-warcraft-logs/workflows/Node.js%20CI/badge.svg)
 
 Interacts with the https://classic.warcraftlogs.com API to provide Discord chat commands
 
