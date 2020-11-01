@@ -53,7 +53,8 @@ module.exports = {
           encounters
             .filter(encounter => encounter.spec === spec)
             .map(encounter => encounter.percentile)
-            .reduce((sum: number, val: number) => sum + val) / encounters.length
+            .reduce((sum: number, val: number) => sum + val, 0) /
+            encounters.length
         )
 
         embed.addField('Average', average)
