@@ -1,5 +1,6 @@
 import Axios from 'axios'
-import { GuildSettingsType, RankingType } from '../types/types'
+import { GuildSettingsType, RankingType, ZoneType } from '../types/types'
+require('dotenv').config()
 
 const wcl = Axios.create({
   baseURL: 'https://classic.warcraftlogs.com/v1',
@@ -12,4 +13,8 @@ export function Rankings(guild: GuildSettingsType, name: string): Promise<any> {
   return wcl.get<Array<RankingType>>(
     `/rankings/character/${name}/${guild.server}/${guild.region}`
   )
+}
+
+export function Zones(): Promise<any> {
+  return wcl.get<Array<ZoneType>>('/zones')
 }
