@@ -1,0 +1,47 @@
+[
+  {
+    "classId": 2,
+    "className": "Druid",
+    "url": "https://i.imgur.com/V1GNR3L.png"
+  },
+  {
+    "classId": 3,
+    "className": "Hunter",
+    "url": "https://i.imgur.com/k2cmDL9.png"
+  },
+  {
+    "classId": 4,
+    "className": "Mage",
+    "url": "https://i.imgur.com/m5R3Jhz.png"
+  },
+  {
+    "classId": 6,
+    "className": "Paladin",
+    "url": "https://i.imgur.com/yyLeEv1.png"
+  },
+  {
+    "classId": 7,
+    "className": "Priest",
+    "url": "https://i.imgur.com/dNNZWhh.png"
+  },
+  {
+    "classId": 8,
+    "className": "Rogue",
+    "url": "https://i.imgur.com/EnrA5On.png"
+  },
+  {
+    "classId": 9,
+    "className": "Shaman",
+    "url": "https://i.imgur.com/SsPNkrY.png"
+  },
+  {
+    "classId": 10,
+    "className": "Warlock",
+    "url": "https://i.imgur.com/c8pbmTP.png"
+  },
+  {
+    "classId": 11,
+    "className": "Warrior",
+    "url": "https://i.imgur.com/VmJqgRs.png"
+  }
+]

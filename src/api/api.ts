@@ -1,5 +1,10 @@
 import Axios from 'axios'
-import { GuildSettingsType, RankingType, ZoneType } from '../types/types'
+import {
+  GuildSettingsType,
+  RankingType,
+  ZoneType,
+  PlayerEncounterDPSResponseType,
+} from '../types/types'
 require('dotenv').config()
 
 const wcl = Axios.create({
@@ -17,4 +22,15 @@ export function Rankings(guild: GuildSettingsType, name: string): Promise<any> {
 
 export function Zones(): Promise<any> {
   return wcl.get<Array<ZoneType>>('/zones')
+}
+
+// TODO: Create EncounterType
+export function PlayerEncounterDPS(
+  guild: GuildSettingsType,
+  encounterId: number,
+  classId: number
+): Promise<any> {
+  return wcl.get<PlayerEncounterDPSResponseType>(
+    `/rankings/encounter/${encounterId}?metric=dps&class=${classId}&server=${guild.server}&region=${guild.region}`
+  )
 }

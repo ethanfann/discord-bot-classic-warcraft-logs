@@ -1,0 +1,526 @@
+[
+  {
+    "id": 1000,
+    "name": "Molten Core",
+    "frozen": false,
+    "encounters": [
+      {
+        "id": 663,
+        "name": "Lucifron"
+      },
+      {
+        "id": 664,
+        "name": "Magmadar"
+      },
+      {
+        "id": 665,
+        "name": "Gehennas"
+      },
+      {
+        "id": 666,
+        "name": "Garr"
+      },
+      {
+        "id": 667,
+        "name": "Shazzrah"
+      },
+      {
+        "id": 668,
+        "name": "Baron Geddon"
+      },
+      {
+        "id": 669,
+        "name": "Sulfuron Harbinger"
+      },
+      {
+        "id": 670,
+        "name": "Golemagg the Incinerator"
+      },
+      {
+        "id": 671,
+        "name": "Majordomo Executus"
+      },
+      {
+        "id": 672,
+        "name": "Ragnaros"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      }
+    ]
+  },
+  {
+    "id": 1001,
+    "name": "Onyxia",
+    "frozen": false,
+    "encounters": [
+      {
+        "id": 1084,
+        "name": "Onyxia"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      }
+    ]
+  },
+  {
+    "id": 1002,
+    "name": "Blackwing Lair",
+    "frozen": false,
+    "encounters": [
+      {
+        "id": 610,
+        "name": "Razorgore the Untamed"
+      },
+      {
+        "id": 611,
+        "name": "Vaelastrasz the Corrupt"
+      },
+      {
+        "id": 612,
+        "name": "Broodlord Lashlayer"
+      },
+      {
+        "id": 613,
+        "name": "Firemaw"
+      },
+      {
+        "id": 614,
+        "name": "Ebonroc"
+      },
+      {
+        "id": 615,
+        "name": "Flamegor"
+      },
+      {
+        "id": 616,
+        "name": "Chromaggus"
+      },
+      {
+        "id": 617,
+        "name": "Nefarian"
+      },
+      {
+        "id": 631,
+        "name": "Ebonroc / Flamegor"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      }
+    ]
+  },
+  {
+    "id": 1003,
+    "name": "Zul'Gurub",
+    "frozen": false,
+    "encounters": [
+      {
+        "id": 784,
+        "name": "High Priest Venoxis"
+      },
+      {
+        "id": 785,
+        "name": "High Priestess Jeklik"
+      },
+      {
+        "id": 786,
+        "name": "High Priestess Mar'li"
+      },
+      {
+        "id": 787,
+        "name": "Bloodlord Mandokir"
+      },
+      {
+        "id": 788,
+        "name": "Edge of Madness"
+      },
+      {
+        "id": 789,
+        "name": "High Priest Thekal"
+      },
+      {
+        "id": 790,
+        "name": "Gahz'ranka"
+      },
+      {
+        "id": 791,
+        "name": "High Priestess Arlokk"
+      },
+      {
+        "id": 792,
+        "name": "Jin'do the Hexxer"
+      },
+      {
+        "id": 793,
+        "name": "Hakkar"
+      },
+      {
+        "id": 794,
+        "name": "Hakkar (Hard Mode)"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      }
+    ]
+  },
+  {
+    "id": 1004,
+    "name": "Ruins of Ahn'Qiraj",
+    "frozen": false,
+    "encounters": [
+      {
+        "id": 718,
+        "name": "Kurinnaxx"
+      },
+      {
+        "id": 719,
+        "name": "General Rajaxx"
+      },
+      {
+        "id": 720,
+        "name": "Moam"
+      },
+      {
+        "id": 721,
+        "name": "Buru the Gorger"
+      },
+      {
+        "id": 722,
+        "name": "Ayamiss the Hunter"
+      },
+      {
+        "id": 723,
+        "name": "Ossirian the Unscarred"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      }
+    ]
+  },
+  {
+    "id": 1005,
+    "name": "Temple of Ahn'Qiraj",
+    "frozen": false,
+    "encounters": [
+      {
+        "id": 709,
+        "name": "The Prophet Skeram"
+      },
+      {
+        "id": 710,
+        "name": "Silithid Royalty"
+      },
+      {
+        "id": 711,
+        "name": "Battleguard Sartura"
+      },
+      {
+        "id": 712,
+        "name": "Fankriss the Unyielding"
+      },
+      {
+        "id": 713,
+        "name": "Viscidus"
+      },
+      {
+        "id": 714,
+        "name": "Princess Huhuran"
+      },
+      {
+        "id": 715,
+        "name": "Twin Emperors"
+      },
+      {
+        "id": 716,
+        "name": "Ouro"
+      },
+      {
+        "id": 717,
+        "name": "C'Thun"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      }
+    ]
+  },
+  {
+    "id": 1006,
+    "name": "Naxxramas",
+    "frozen": true,
+    "encounters": [
+      {
+        "id": 1118,
+        "name": "Patchwerk"
+      },
+      {
+        "id": 1111,
+        "name": "Grobbulus"
+      },
+      {
+        "id": 1108,
+        "name": "Gluth"
+      },
+      {
+        "id": 1120,
+        "name": "Thaddius"
+      },
+      {
+        "id": 1117,
+        "name": "Noth the Plaguebringer"
+      },
+      {
+        "id": 1112,
+        "name": "Heigan the Unclean"
+      },
+      {
+        "id": 1115,
+        "name": "Loatheb"
+      },
+      {
+        "id": 1107,
+        "name": "Anub'Rekhan"
+      },
+      {
+        "id": 1110,
+        "name": "Grand Widow Faerlina"
+      },
+      {
+        "id": 1116,
+        "name": "Maexxna"
+      },
+      {
+        "id": 1113,
+        "name": "Instructor Razuvious"
+      },
+      {
+        "id": 1109,
+        "name": "Gothik the Harvester"
+      },
+      {
+        "id": 1121,
+        "name": "The Four Horsemen"
+      },
+      {
+        "id": 1119,
+        "name": "Sapphiron"
+      },
+      {
+        "id": 1114,
+        "name": "Kel'Thuzad"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      }
+    ]
+  },
+  {
+    "id": 1500,
+    "name": "Classic Raids (40-Man)",
+    "frozen": false,
+    "encounters": [
+      {
+        "id": 673,
+        "name": "Molten Core"
+      },
+      {
+        "id": 630,
+        "name": "Blackwing Lair"
+      },
+      {
+        "id": 700,
+        "name": "Temple of Ahn'qiraj"
+      }
+    ],
+    "brackets": {
+      "min": 50,
+      "max": 80,
+      "bucket": 3,
+      "type": "Item Level"
+    },
+    "partitions": [
+      {
+        "name": "P1 & P2",
+        "compact": "P1 & P2"
+      },
+      {
+        "name": "P3 & P4",
+        "compact": "P3 & P4"
+      },
+      {
+        "name": "P3 & P4 (Skips)",
+        "compact": "P3 & P4 (Skips)"
+      },
+      {
+        "name": "P5",
+        "compact": "P5",
+        "default": true
+      },
+      {
+        "name": "P5 (Without World Buffs)",
+        "compact": "P5 (No WB)"
+      },
+      {
+        "name": "P5 (Skips)",
+        "compact": "P5 (Skips)"
+      },
+      {
+        "name": "P5 (Without World Buffs, Skips)",
+        "compact": "P5 (No WB, Skips)"
+      }
+    ]
+  }
+]
