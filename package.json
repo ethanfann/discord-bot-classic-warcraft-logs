@@ -17,6 +17,7 @@
     "@keyv/sqlite": "^2.0.2",
     "@types/node": "^13.9.2",
     "axios": "^0.18.1",
+    "dayjs": "^1.9.5",
     "discord.js": "^12.0.2",
     "dotenv": "^8.2.0",
     "keyv": "^4.0.1",
