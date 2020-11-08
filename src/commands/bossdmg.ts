@@ -18,7 +18,7 @@ interface LeaderboardMapType {
 }
 
 module.exports = {
-  name: 'spec',
+  name: 'bossdmg',
   description:
     'Displays the Top-10 characters of a specific spec with the highest average boss damage.',
   execute: (guild: GuildSettingsType, msg: Message, args: Array<string>) => {
@@ -63,7 +63,7 @@ module.exports = {
 
         sorted.slice(0, 5).forEach((player, index) => {
           embed.addField(
-            `${index + 1}: ${player[0]}`,
+            `${index + 1}. ${player[0]}`,
             `${(player[1] / recentZone.encounters.length).toFixed(2)} dps`
           )
         })
