@@ -39,10 +39,14 @@ bot.on('message', msg => {
 
   getGuildSettings(msg.guild.id).then(settings => {
     if (!settings && command.name != 'config') {
-      msg.reply('')
+      msg.reply(
+        'A server admin has yet to complete setup. Please run: ?wcl config'
+      )
     }
     command.execute(settings, msg, commandArgs)
   })
 })
 
-process.env.ENV === 'dev' ? bot.login(process.env.TEST_TOKEN) : bot.login(process.env.TOKEN)
+process.env.ENV === 'dev'
+  ? bot.login(process.env.TEST_TOKEN)
+  : bot.login(process.env.TOKEN)
