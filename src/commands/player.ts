@@ -20,7 +20,10 @@ module.exports = {
     'Obtains top parses from the latest raid for the desired player.',
   execute: (guild: GuildSettingsType, msg: Message, args: Array<string>) => {
     let name: string = args[0]
-    let spec: string = args[1] ? args[1] : 'DPS'
+    // WCL API has some questionable design decisions, like "Fire"
+    // being used as a spec when every other
+    // dps class just has "DPS"
+    let specs: Array<string> = args[1] ? [args[1]] : ['DPS', 'Fire']
 
     if (name == null) {
       return
@@ -34,9 +37,13 @@ module.exports = {
             'https://dmszsuqyoe6y6.cloudfront.net/img/warcraft/favicon.png'
           )
 
-        let encounters = response.data.filter(
-          encounter => encounter.spec === spec
+        console.log(response.data)
+
+        let encounters = response.data.filter(encounter =>
+          specs.includes(encounter.spec)
         )
+
+        console.log(encounters)
 
         encounters.forEach(encounter => {
           embed.addField(
@@ -51,7 +58,7 @@ module.exports = {
 
         let average: number = Math.round(
           encounters
-            .filter(encounter => encounter.spec === spec)
+            .filter(encounter => specs.includes(encounter.spec))
             .map(encounter => encounter.percentile)
             .reduce((sum: number, val: number) => sum + val, 0) /
             encounters.length
