@@ -37,13 +37,16 @@ module.exports = {
             'https://dmszsuqyoe6y6.cloudfront.net/img/warcraft/favicon.png'
           )
 
-        console.log(response.data)
-
         let encounters = response.data.filter(encounter =>
           specs.includes(encounter.spec)
         )
 
-        console.log(encounters)
+        if (encounters.length === 0) {
+          msg.reply(
+            'No encounters found for the specified player. Are they raiding?'
+          )
+          return
+        }
 
         encounters.forEach(encounter => {
           embed.addField(
