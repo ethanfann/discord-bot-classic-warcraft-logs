@@ -1,6 +1,8 @@
 import Discord, { Message, Client } from 'discord.js'
-import { RankingType, GuildSettingsType } from '../types/types'
+import { RankingType, GuildSettingsType, IconType } from '../types/types'
 import { Rankings } from '../api/api'
+
+const icons = require('../info/icons.json')
 
 function deriveMainSpec(rankings: Array<RankingType>): string {
   let counts = {}
@@ -23,7 +25,7 @@ module.exports = {
     // WCL API has some questionable design decisions, like "Fire"
     // being used as a spec when every other
     // dps class just has "DPS"
-    let specs: Array<string> = args[1] ? [args[1]] : ['DPS', 'Fire']
+    let specs: Array<string> = args[1] ? [args[1], 'Fire'] : ['DPS', 'Fire']
 
     if (name == null) {
       return
@@ -31,11 +33,12 @@ module.exports = {
 
     Rankings(guild, name)
       .then(response => {
+        const icon: IconType = icons.find(
+          (icon: IconType) => icon.className === response.data[0].class
+        )
         let embed = new Discord.MessageEmbed()
           .setTitle(args[0])
-          .setThumbnail(
-            'https://dmszsuqyoe6y6.cloudfront.net/img/warcraft/favicon.png'
-          )
+          .setThumbnail(icon.url)
 
         let encounters = response.data.filter(encounter =>
           specs.includes(encounter.spec)
