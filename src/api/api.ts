@@ -14,10 +14,20 @@ const wcl = Axios.create({
   },
 })
 
-export function Rankings(guild: GuildSettingsType, name: string): Promise<any> {
-  return wcl.get<Array<RankingType>>(
-    `/rankings/character/${name}/${guild.server}/${guild.region}`
-  )
+export function Rankings(
+  guild: GuildSettingsType,
+  name: string,
+  zoneId?: number
+): Promise<any> {
+  if (zoneId) {
+    return wcl.get<Array<RankingType>>(
+      `/rankings/character/${name}/${guild.server}/${guild.region}?zone=${zoneId}`
+    )
+  } else {
+    return wcl.get<Array<RankingType>>(
+      `/rankings/character/${name}/${guild.server}/${guild.region}`
+    )
+  }
 }
 
 export function Zones(): Promise<any> {

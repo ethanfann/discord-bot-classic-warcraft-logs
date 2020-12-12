@@ -27,11 +27,24 @@ module.exports = {
     // dps class just has "DPS"
     let specs: Array<string> = args[1] ? [args[1], 'Fire'] : ['DPS', 'Fire']
 
+    const ZoneAbbrvs = {
+      Naxx: 1006,
+      AQ40: 1005,
+      AQ20: 1004,
+      ZG: 1003,
+      BWL: 1002,
+      MC: 1001,
+    }
+
+    // Optional argument to specify raid tier. MC, BWL, AQ40
+    const raidArgs: string = args[2]
+    const raidId: number = ZoneAbbrvs[raidArgs] ? ZoneAbbrvs[raidArgs] : null
+
     if (name == null) {
       return
     }
 
-    Rankings(guild, name)
+    Rankings(guild, name, raidId)
       .then(response => {
         const icon: IconType = icons.find(
           (icon: IconType) => icon.className === response.data[0].class

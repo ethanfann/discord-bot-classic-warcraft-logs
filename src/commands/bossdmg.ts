@@ -11,7 +11,7 @@ import { PlayerEncounterDPS } from '../api/api'
 import axios from 'axios'
 
 // TODO: Find a way to not hard code determine this
-const RECENT_ZONE_ID: number = 1005
+const RECENT_ZONE_ID: number = 1006
 
 interface LeaderboardMapType {
   [playerName: string]: number
@@ -59,7 +59,7 @@ module.exports = {
           .setThumbnail(icon.url)
 
         embed.addField('Class', spec.name, true)
-        embed.addField('Raid', 'AQ40', true)
+        embed.addField('Raid', 'Naxxramas', true)
 
         sorted.slice(0, 5).forEach((player, index) => {
           embed.addField(
